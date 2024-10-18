@@ -8,7 +8,21 @@
 
 <body>
 	<!-- the entire body must be written by student -->
+	
     <script type="text/javascript" src="./script.js">
+		// 1. Create the student object with a property called name
+let student = {
+    name: 'John' // name is the property with value 'John'
+};
+
+// 2. Add a method to the Object prototype called getKeys
+Object.prototype.getKeys = function() {
+    return Object.keys(this); // Object.keys() is used to get an array of keys in the object
+};
+
+// Example: calling getKeys on the student object
+console.log(student.getKeys()); // Output: ['name']
+
 </script>
 
 </body>
