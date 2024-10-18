@@ -1,30 +1,26 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App Example</title>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-	
-    <script type="text/javascript" src="./script.js">
-		// 1. Create the student object with a property called name
-let student = {
-    name: 'John' // name is the property with value 'John'
-};
+    <!-- <h1>To-Do App Example</h1> -->
 
-// 2. Add a method to the Object prototype called getKeys
-Object.prototype.getKeys = function() {
-    return Object.keys(this); // Object.keys() is used to get an array of keys in the object
-};
+    <script>
+        // Add getKeys method to the Object prototype
+        Object.prototype.getKeys = function() {
+            return Object.keys(this);
+        };
 
-// Example: calling getKeys on the student object
-console.log(student.getKeys()); // Output: ['name']
+        // Example objects
+        let myObj1 = { task: 'buy groceries', completed: false };
+        let myObj2 = { task: 'do laundry', completed: true };
 
-</script>
-
+        // Testing getKeys functionality
+        console.log(myObj1.getKeys()); // Output: ['task', 'completed']
+        console.log(myObj2.getKeys()); // Output: ['task', 'completed']
+    </script>
 </body>
-
 </html>
